@@ -4,7 +4,7 @@ import blobs from "../resources/blobs.png";
 
 const HomeComponent = () => {
     return (
-        <div>
+        <div className="homa-page-content">
             <div style={{display: "flex", flexDirection: "row"}}>
                 <div style={{width: "852px", height: "442px"}}>
                     <h1>SMARTIE</h1>
@@ -16,13 +16,13 @@ const HomeComponent = () => {
                         and students with the tools, knowledge, and infrastructure necessary to thrive in an increasingly AI-driven world.
                     </p>
                 </div>
-                <div>
+                {/* <div>
                     <img 
                         src={blobs} 
                         alt="blobs" 
-                        style={{width: "972.41px", height: "936px"}}
+                        style={{width: "972.41px", height: "818px"}}
                     />
-                </div>
+                </div> */}
             </div>
         </div>
     );

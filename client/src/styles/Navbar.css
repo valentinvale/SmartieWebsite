@@ -1,0 +1,9 @@
+.navbar {
+    background-color: #1A2633 !important;
+    height: 82px;
+}
+
+.nav-link {
+    color: white !important;
+    cursor: pointer;
+}

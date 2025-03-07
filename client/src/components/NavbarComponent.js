@@ -1,4 +1,4 @@
-import React, { use, useState } from 'react';
+import React, { useState } from 'react';
 import {
   Collapse,
   Navbar,
@@ -7,18 +7,20 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText,
+  // UncontrolledDropdown,
+  // DropdownToggle,
+  // DropdownMenu,
+  // DropdownItem,
+  // NavbarText,
 } from 'reactstrap';
 
 import { useNavigate } from 'react-router-dom';
 
 import { ROOT, PARTNERS, OBJECTIVES, ACTIVITIES, DELIVERABLES, MATERIALS, CONTACTUS } from '../router/RouteNames';
 
-import horizontalLogo from '../resources/Horizontal.png';
+import lightHorizontalLogo from '../resources/LightHorizontal.png';
+
+import '../styles/Navbar.css';
 
 function NavbarComponent(args) {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,10 +31,10 @@ function NavbarComponent(args) {
 
   return (
     <div>
-      <Navbar {...args}>
+      <Navbar className='navbar' {...args}>
         <NavbarBrand onClick={() => navigate(ROOT.name)}>
             <img
-                src={horizontalLogo}
+                src={lightHorizontalLogo}
                 width="243"
                 height="72"
                 alt="Smartie"

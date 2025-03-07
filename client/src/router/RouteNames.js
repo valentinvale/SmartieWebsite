@@ -1,4 +1,10 @@
+import ActivitiesComponent from "../components/ActivitiesComponent";
+import ContactUsComponent from "../components/ContactUsComponent";
+import DeliverablesComponent from "../components/DeliverablesComponent";
 import HomeComponent from "../components/HomeComponent"
+import MaterialsComponent from "../components/MaterialsComponent";
+import ObjectivesComponent from "../components/ObjectivesComponent";
+import PartnersComponent from "../components/PartnersComponent"
 
 const RouteNames = [
     {
@@ -13,32 +19,32 @@ const RouteNames = [
 
     {
         name: "/partners",
-        component: <HomeComponent />
+        component: <PartnersComponent />
     },
 
     {
         name: "/objectives",
-        component: <HomeComponent />
+        component: <ObjectivesComponent />
     },
 
     {
         name: "/activities",
-        component: <HomeComponent />
+        component: <ActivitiesComponent />
     },
     
     {
         name: "/deliverables",
-        component: <HomeComponent />
+        component: <DeliverablesComponent />
     },
     
     {
         name: "/materials",
-        component: <HomeComponent />
+        component: <MaterialsComponent />
     },
 
     {
         name: "/contactus",
-        component: <HomeComponent />
+        component: <ContactUsComponent />
     },
 ];
 
@@ -54,32 +60,32 @@ export const HOME = {
 
 export const PARTNERS = {
     name: "/partners",
-    component: <HomeComponent />
+    component: <PartnersComponent />
 };
 
 export const OBJECTIVES = {
     name: "/objectives",
-    component: <HomeComponent />
+    component: <ObjectivesComponent />
 };
 
 export const ACTIVITIES = {
     name: "/activities",
-    component: <HomeComponent />
+    component: <ActivitiesComponent />
 };
 
 export const DELIVERABLES = {
     name: "/deliverables",
-    component: <HomeComponent />
+    component: <DeliverablesComponent />
 };
 
 export const MATERIALS = {
     name: "/materials",
-    component: <HomeComponent />
+    component: <MaterialsComponent />
 };
 
 export const CONTACTUS = {
     name: "/contactus",
-    component: <HomeComponent />
+    component: <ContactUsComponent />
 };
 
 export default RouteNames;
