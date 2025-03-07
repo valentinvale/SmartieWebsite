@@ -1,0 +1,21 @@
+.text-div{
+    color: var(--primary-text-color);
+}
+
+.home-p{
+    color: var(--secondary-text-color);
+}
+
+.home-page-content{
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+
+    background-image: url("../resources/blobs.png"); /* Ensure correct path */
+    background-size: contain;
+    background-position: right -100px center; /* Offset to the right */
+    background-repeat: no-repeat;
+}
