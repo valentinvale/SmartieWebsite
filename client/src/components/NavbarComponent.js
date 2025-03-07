@@ -58,8 +58,8 @@ function NavbarComponent(args) {
             <NavItem>
                 <NavLink onClick={() => navigate(MATERIALS.name)}>Materials?</NavLink>
             </NavItem>
-            <NavItem>
-                <NavLink onClick={() => navigate(CONTACTUS.name)}>Contact Us!</NavLink>
+            <NavItem >
+                <NavLink className='contact-us'  onClick={() => navigate(CONTACTUS.name)}>Contact Us!</NavLink>
             </NavItem>
           </Nav>
          

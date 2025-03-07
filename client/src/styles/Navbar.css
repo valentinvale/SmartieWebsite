@@ -1,9 +1,74 @@
+/* NAVBAR */
 .navbar {
     background-color: #1A2633 !important;
-    height: 82px;
+    height: clamp(60px, 10vh, 82px) !important; 
+    padding: 0 2vw !important; 
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
 }
 
+/* BRAND LOGO */
+.nav-brand {
+    width: clamp(120px, 15vw, 243px); /* Scales between 120px and 243px */
+    height: auto; /* Keeps aspect ratio */
+    max-height: 72px; /* Ensures it doesn’t get too big */
+}
+
+/* NAV LINKS */
+.nav-item {
+    height: auto; /* Adjust based on content */
+    width: auto; /* Ensures natural sizing */
+    padding: 0.5rem 1rem; /* Adds spacing */
+}
+
+/* NAV TEXT */
 .nav-link {
     color: white !important;
     cursor: pointer;
+    font-size: clamp(1rem, 1.5vw, 1.5rem); /* Responsive font size */
+}
+
+.nav-link:hover {
+    color: var(--secondary-background-color) !important;
+}
+
+.contact-us{
+    border: 2px solid;
+    border-radius: 25px;
+    background-color: var(--secondary-background-color) !important;
+    padding: 0.2rem 1rem 0.2rem 1rem !important;
+    align-items: center !important;
+    margin-top: 0.5rem !important;
+}
+
+.contact-us:hover{
+    background-color: white !important;
+    color: var(--secondary-background-color) !important;
+}
+
+/* RESPONSIVE NAV MENU (FOR SMALL SCREENS) */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .nav-brand {
+        width: 40%; /* Smaller logo on mobile */
+    }
+
+    .nav-item {
+        text-align: center;
+        width: 100%; /* Full width menu */
+    }
+
+    .nav-link {
+        font-size: 1.2rem; /* Adjust font for mobile */
+        display: block;
+        padding: 10px;
+    }
+
+    
 }
