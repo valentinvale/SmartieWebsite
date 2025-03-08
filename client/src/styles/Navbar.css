@@ -6,6 +6,7 @@
     display: flex !important;
     align-items: center !important;
     justify-content: space-between !important;
+
 }
 
 /* BRAND LOGO */
@@ -47,28 +48,86 @@
     color: var(--secondary-background-color) !important;
 }
 
+.navbar-toggler{
+    border: none !important;
+}
+
+.navbar-toggler:focus{
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.navbar-toggler-icon{
+    filter: invert(1) !important;
+}
+
+
+.collapse{
+    justify-content: flex-end !important;
+    background-color: var(--background-color) !important;
+}
+
+.navbar-collapse{
+    justify-content: flex-end !important;
+    background-color: var(--background-color) !important;
+}
+
+
+
 /* RESPONSIVE NAV MENU (FOR SMALL SCREENS) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .navbar {
-        flex-direction: column;
-        height: auto;
-        padding: 1rem;
+        flex-direction: column !important; /* Stack items vertically */
+        height: auto !important; /* Adjust height based on content */
+        padding: 1rem 0 !important; /* Add padding */
     }
 
+    .collapse .navbar-nav {
+        display: none !important; /* Hide menu */
+    }
+
+    .collapse.show .navbar-nav {
+        display: flex !important; /* Show menu */
+        flex-direction: column !important; /* Stack items vertically */
+        width: 100% !important; /* Full width menu */
+    }
+
+    .navbar-toggler {
+        display: flex !important; /* Show hamburger menu */
+        margin-left: auto !important; /* Move to right */
+    }
+
+    .collapse{
+        justify-content: flex-end !important;
+        background-color: var(--background-color) !important;
+    }
+    
+    .navbar-collapse{
+        justify-content: flex-end !important;
+        background-color: var(--background-color) !important;
+    }
+
+   
+
     .nav-brand {
-        width: 40%; /* Smaller logo on mobile */
+        width: 40% !important; /* Smaller logo on mobile */
     }
 
     .nav-item {
-        text-align: center;
-        width: 100%; /* Full width menu */
+        text-align: center !important; /* Center text */
+        width: 100% !important; /* Full width menu */
     }
 
     .nav-link {
-        font-size: 1.2rem; /* Adjust font for mobile */
-        display: block;
-        padding: 10px;
+        font-size: 1.2rem !important; /* Adjust font for mobile */
+        display: block !important; /* Stack links */
+        padding: 10px 0 !important; /* Add padding */
     }
 
     
 }
+
+
+
+

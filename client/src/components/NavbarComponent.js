@@ -31,7 +31,7 @@ function NavbarComponent(args) {
 
   return (
     <div>
-      <Navbar className='navbar' {...args}>
+      <Navbar className='navbar' expand='lg' {...args}>
         <NavbarBrand onClick={() => navigate(ROOT.name)}>
             <img
                 src={lightHorizontalLogo}

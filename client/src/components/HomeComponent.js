@@ -8,7 +8,7 @@ const HomeComponent = () => {
     return (
         <div className="home-page-content">
             <div style={{display: "flex", flexDirection: "column"}}>
-                <div className="text-div" style={{width: "852px", height: "442px"}}>
+                <div className="text-div">
                     <h1 className="home-title">SMARTIE</h1>
                     <h4 className="home-subtitle">Synergistic Management and Advancement of Artificial Intelligence in European Higher Education</h4>
                     <p className="home-p">
@@ -20,9 +20,9 @@ const HomeComponent = () => {
                 </div>
                 <div className="erasmus-div">
                     <img 
+                        className="erasmus-img"
                         src={erasmus} 
                         alt="erasmus" 
-                        style={{width: "590px", height: "56px"}}
                     />
                 </div>
             </div>
