@@ -14,7 +14,7 @@ const PartnersComponent = () => {
     return (
         <div className="partners-page">
             <div className="partners-page-description">
-                <div style={{display: "flex", flexDirection: "column"}}>
+                <div className="description-content" style={{display: "flex", flexDirection: "column"}}>
                     <div className="text-div">
                         <h1 className="partners-title">Our Partners</h1>
                         <p className="partners-p">

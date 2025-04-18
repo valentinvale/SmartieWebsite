@@ -48,10 +48,16 @@
 @media screen and (max-width: 768px) {
     .partners-page-description {
         flex-direction: column; /* Stack items vertically */
-        justify-content: center !important;
+        margin-top: 50px !important;
         align-items: center !important;
 
         text-align: center !important;
+
+        background-image: url("../resources/earth.png");
+        background-size: 50%;
+        background-position: bottom 150px center;
+        background-repeat: no-repeat;
+  
     }
 
     .text-div {
@@ -67,4 +73,54 @@
         font-size: clamp(0.8rem, 3vw, 1rem) !important;
     }
 
+    .partner-cards {
+        padding-top: 10vh !important;
+        padding-bottom: 5vh !important;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .partners-page-description {
+        flex-direction: column; /* Stack items vertically */
+        margin-top: 50px !important;
+        align-items: center !important;
+
+        text-align: center !important;
+
+        background-image: url("../resources/earth.png");
+        background-size: 70%;
+        background-position: bottom 150px center;
+        background-repeat: no-repeat;
+    }
+
+    .description-content{
+        text-align: center !important;
+        justify-content: center !important;
+        align-items: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+
+    .text-div {
+        width: 70% !important; /* 70% of the screen width */
+        text-align: center !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .partners-title {
+        font-size: clamp(2rem, 5vw, 4rem) !important;
+    }
+
+    .partners-p {
+        font-size: clamp(0.8rem, 3vw, 1rem) !important;
+    }
+    .partner-cards {
+        padding-top: 10vh !important;
+        padding-bottom: 5vh !important;
+    }
+
+    
+    
 }
