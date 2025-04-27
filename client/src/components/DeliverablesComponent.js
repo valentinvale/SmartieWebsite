@@ -1,9 +1,11 @@
 import React from "react";
+import WorkInProgress from "./WorkInProgress";
 
 const DeliverablesComponent = () => {
     return (
         <div>
-            <h1>Deliverables</h1>
+            <WorkInProgress />
+            
         </div>
     );
 }

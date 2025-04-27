@@ -3,6 +3,7 @@ import NavbarComponent from "./NavbarComponent";
 import FooterComponent from "./FooterComponent";
 import { Container } from "reactstrap";
 import "../styles/Layout.css";
+import SnackbarWIP from "./SnackbarWIP";
 
 const Layout = (props) => {
     return (
@@ -11,6 +12,7 @@ const Layout = (props) => {
             <Container className="main-content" tag="menu">
                 {props.children}
             </Container>
+            <SnackbarWIP open={true} />
             <FooterComponent/>
         </div>
     );

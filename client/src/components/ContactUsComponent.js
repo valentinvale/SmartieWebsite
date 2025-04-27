@@ -1,9 +1,10 @@
 import React from "react";
+import WorkInProgress from "./WorkInProgress";
 
 const ContactUsComponent = () => {
     return (
         <div>
-            <h1>Contact Us</h1>
+            <WorkInProgress />
         </div>
     );
 }

@@ -1,9 +1,10 @@
 import React from "react";
+import WorkInProgress from "./WorkInProgress";
 
 const ActivitiesComponent = () => {
     return (
         <div>
-            <h1>Activities</h1>
+            <WorkInProgress />
             
         </div>
     );
