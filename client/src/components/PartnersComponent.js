@@ -1,6 +1,7 @@
 import React from "react";
 
 import PartnerCard from "./PartnerCard";
+import NewPartnerCard from "./NewPartnerCard";
 
 import "../styles/Partners.css";
 
@@ -9,8 +10,22 @@ import acceu from "../resources/acceu.png";
 import bari from "../resources/bari.png";
 import malaga from "../resources/malaga.png";
 import zilina from "../resources/zilina.png";
+import lisboa from "../resources/lisboa.png";
+import ljubljana from "../resources/ljubliana.png";
+import babes from "../resources/babes.png";
+import fhoo from "../resources/fhoo.png";
+
+import roflag from "../resources/roflag.png";
+import germanyflag from "../resources/germanyflag.png";
+import italyflag from "../resources/italyflag.png";
+import spainflag from "../resources/spainflag.png";
+import slovakiaflag from "../resources/slovakiaflag.png";
+import sloveniaflag from "../resources/sloveniaflag.png";
+import austriaflag from "../resources/austriaflag.png";
+import portugalflag from "../resources/portoflag.png";
 
 const PartnersComponent = () => {
+
     return (
         <div className="partners-page">
             <div className="partners-page-description">
@@ -28,7 +43,7 @@ const PartnersComponent = () => {
                 </div>
             </div>
             <div className="partner-cards">
-                <PartnerCard
+                {/* <PartnerCard
                     image={ucv}
                     title="University of Craiova"
                     description="The University of Craiova (Romanian: Universitatea din Craiova) is a public university 
@@ -66,7 +81,137 @@ const PartnersComponent = () => {
                     In 1959, the institution changed its name to the University of Transport and moved to Žilina. 
                     As a result of the increasing role of communications within the curriculum of the university, 
                     the name changed to University of Transport and Communications."
+                /> */}
+
+                <NewPartnerCard
+                    partnerImage={ucv}
+                    partnerName="University of Craiova"
+                    partnerFlag={roflag}
+                    countryName={"Romania"}
+                    coordinator={true}
+                    email="nicusor.bancu@ucv.ro"
+                    phone="+40 777 777 777"
+                    contactPerson="Nicuşor Bancu"
+                    description="The University of Craiova (Romanian: Universitatea din Craiova) is a public university located in Craiova, Romania.
+                    It was founded in 1947, initially with four institutes, in the Palace of Justice of Craiova.
+                    It is the largest university in the historical Oltenia province of Romania.
+                    It was the last university established in the Kingdom of Romania."
                 />
+
+                <NewPartnerCard
+                    partnerImage={acceu}
+                    partnerName="ACCEU GmbH"
+                    partnerFlag={germanyflag}
+                    countryName={"Germany"}
+                    email="nicusor.bancu@ucv.ro"
+                    phone="+40 777 777 777"
+                    contactPerson="Nicuşor Bancu"
+                    description="The University of Craiova (Romanian: Universitatea din Craiova) is a public university located in Craiova, Romania.
+                    It was founded in 1947, initially with four institutes, in the Palace of Justice of Craiova.
+                    It is the largest university in the historical Oltenia province of Romania.
+                    It was the last university established in the Kingdom of Romania."
+                />
+
+                <NewPartnerCard
+                    partnerImage={lisboa}
+                    partnerName="University of Lisbon"
+                    partnerFlag={portugalflag}
+                    countryName={"Portugal"}
+                    email="nicusor.bancu@ucv.ro"
+                    phone="+40 777 777 777"
+                    contactPerson="Nicuşor Bancu"
+                    description="The University of Craiova (Romanian: Universitatea din Craiova) is a public university located in Craiova, Romania.
+                    It was founded in 1947, initially with four institutes, in the Palace of Justice of Craiova.
+                    It is the largest university in the historical Oltenia province of Romania.
+                    It was the last university established in the Kingdom of Romania."
+                />
+
+                <NewPartnerCard
+                    partnerImage={ljubljana}
+                    partnerName="University of Ljubljana"
+                    partnerFlag={sloveniaflag}
+                    countryName={"Slovenia"}
+                    email="nicusor.bancu@ucv.ro"
+                    phone="+40 777 777 777"
+                    contactPerson="Nicuşor Bancu"
+                    description="The University of Craiova (Romanian: Universitatea din Craiova) is a public university located in Craiova, Romania.
+                    It was founded in 1947, initially with four institutes, in the Palace of Justice of Craiova.
+                    It is the largest university in the historical Oltenia province of Romania.
+                    It was the last university established in the Kingdom of Romania."
+                />
+
+                <NewPartnerCard
+                    partnerImage={zilina}
+                    partnerName="University of Zilina"
+                    partnerFlag={slovakiaflag}
+                    countryName={"Slovakia"}
+                    email="nicusor.bancu@ucv.ro"
+                    phone="+40 777 777 777"
+                    contactPerson="Nicuşor Bancu"
+                    description="The University of Craiova (Romanian: Universitatea din Craiova) is a public university located in Craiova, Romania.
+                    It was founded in 1947, initially with four institutes, in the Palace of Justice of Craiova.
+                    It is the largest university in the historical Oltenia province of Romania.
+                    It was the last university established in the Kingdom of Romania."
+                />
+
+                <NewPartnerCard
+                    partnerImage={bari}
+                    partnerName="Polytechnic University of Bari"
+                    partnerFlag={italyflag}
+                    countryName={"Italy"}
+                    email="nicusor.bancu@ucv.ro"
+                    phone="+40 777 777 777"
+                    contactPerson="Nicuşor Bancu"
+                    description="The University of Craiova (Romanian: Universitatea din Craiova) is a public university located in Craiova, Romania.
+                    It was founded in 1947, initially with four institutes, in the Palace of Justice of Craiova.
+                    It is the largest university in the historical Oltenia province of Romania.
+                    It was the last university established in the Kingdom of Romania."
+                />
+
+                <NewPartnerCard
+                    partnerImage={malaga}
+                    partnerName="University of Málaga"
+                    partnerFlag={spainflag}
+                    countryName={"Spain"}
+                    email="nicusor.bancu@ucv.ro"
+                    phone="+40 777 777 777"
+                    contactPerson="Nicuşor Bancu"
+                    description="The University of Craiova (Romanian: Universitatea din Craiova) is a public university located in Craiova, Romania.
+                    It was founded in 1947, initially with four institutes, in the Palace of Justice of Craiova.
+                    It is the largest university in the historical Oltenia province of Romania.
+                    It was the last university established in the Kingdom of Romania."
+                />
+
+                <NewPartnerCard
+                    partnerImage={fhoo}
+                    partnerName="University of Applied Sciences"
+                    partnerFlag={austriaflag}
+                    countryName={"Austria"}
+                    email="nicusor.bancu@ucv.ro"
+                    phone="+40 777 777 777"
+                    contactPerson="Nicuşor Bancu"
+                    description="The University of Craiova (Romanian: Universitatea din Craiova) is a public university located in Craiova, Romania.
+                    It was founded in 1947, initially with four institutes, in the Palace of Justice of Craiova.
+                    It is the largest university in the historical Oltenia province of Romania.
+                    It was the last university established in the Kingdom of Romania."
+                />
+
+                <NewPartnerCard
+                    partnerImage={babes}
+                    partnerName="Babeș-Bolyai University"
+                    partnerFlag={roflag}
+                    countryName={"Romania"}
+                    email="nicusor.bancu@ucv.ro"
+                    phone="+40 777 777 777"
+                    contactPerson="Nicuşor Bancu"
+                    description="The University of Craiova (Romanian: Universitatea din Craiova) is a public university located in Craiova, Romania.
+                    It was founded in 1947, initially with four institutes, in the Palace of Justice of Craiova.
+                    It is the largest university in the historical Oltenia province of Romania.
+                    It was the last university established in the Kingdom of Romania."
+                />
+
+                
+
             </div>
         </div>
       

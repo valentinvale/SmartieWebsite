@@ -12,7 +12,7 @@
     position: absolute;
     z-index: 2;
     background-color: transparent;
-    left: -25px;
+    left: -35px;
 }
 
 .specific-circle-image-container {
@@ -40,7 +40,7 @@
     color: var(--primary-text-color);
     border-radius: 15px !important;
     text-align: center;
-    height: 100px;
+    height: 100px !important;
     width: 100%;
     padding-left: 100px;
     display: flex;
@@ -70,15 +70,15 @@
 @media screen and (max-width: 768px) {
     .specific-card {
         flex-direction: column;
-        height: 360px; /* auto height to fit content */
-        width: 70vw; /* 90% of the screen width */
-        margin: 80px 0; /* vertical margin for spacing */
-        align-items: center; /* center align items */
+        height: 360px; 
+        width: 70vw;
+        margin: 80px 0; 
+        align-items: center;
     }
 
     .specific-circle-image-wrapper {
-        top: -100px; /* moves it up above card body */
-        left: 50%;   /* center from left edge */
+        top: -100px; 
+        left: 50%;   
         transform: translateX(-50%); /* perfectly center it */
     }
 
@@ -93,29 +93,29 @@
     }
 
     .specific-card-body {
-        padding-top: 60px; /* adjust padding for smaller screens */
+        padding-top: 60px; 
         padding-left: 0px;
         min-height: 250px;
     }
     
     .specific-title {
-        font-size: 1.5rem; /* adjust font size for smaller screens */
+        font-size: 1.5rem; 
     }
     
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+/* @media screen and (min-width: 769px) and (max-width: 1200px) {
     .specific-card {
-        width: 60vw; /* 80% of the screen width */
-        height: 360px; /* auto height to fit content */
-        margin: 50px 0; /* vertical margin for spacing */
+        width: 60vw; 
+        height: 360px; 
+        margin: 50px 0;
         align-items: center;
     }
 
     .specific-circle-image-wrapper {
-        top: -100px; /* moves it up above card body */
-        left: 50%;   /* center from left edge */
-        transform: translateX(-50%); /* perfectly center it */
+        top: -100px; 
+        left: 50%;  
+        transform: translateX(-50%); 
     }
 
     .specific-circle-image-container {
@@ -129,13 +129,13 @@
     }
 
     .specific-card-body {
-        padding-top: 60px; /* adjust padding for smaller screens */
+        padding-top: 60px; 
         padding-left: 0px;
         min-height: 250px;
     }
 
     .specific-title {
-        font-size: 1.3rem; /* adjust font size for medium screens */
+        font-size: 1.3rem; 
     }
     
-}
+} */
