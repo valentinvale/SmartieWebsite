@@ -27,27 +27,33 @@ const NewPartnerCard = ({partnerImage, partnerName, countryName, partnerFlag, co
                     <div className="new-partner-coordinator-container">
                         {coordinator && <CardText className="new-partner-coordinator">Coordinator</CardText>}
                     </div>
-                    <div className="new-partner-phone-container">
-                        <CardText className="new-partner-phone">Phone: {phone}</CardText>
+                    <div className="new-partner-contact-grid">
+                        <div className="contact-label">Phone:</div>
+                        <div className="contact-value">{phone}</div>
+                        <div className="contact-label">Email:</div>
+                        <div className="contact-value-email">
+                            {email}
+                            
+                        </div>
+                        <div className="learn-more-button-wrapper">
+                            <a className="learn-more-button" onClick={toggleModal}>
+                                Learn More &gt;&gt;
+                            </a>
+                            <PartnerModal 
+                                isOpen={modalOpen}
+                                toggle={toggleModal}
+                                partnerName={partnerName}
+                                partnerFlag={partnerFlag}
+                                partnerCountry={countryName} // Placeholder, replace with actual country name
+                                contactPerson={contactPerson}
+                                phone={phone}
+                                email={email}
+                                partnerDescription={description}
+                            
+                            />
+                        </div>
                     </div>
-                    <div className="new-partner-email-container">
-                        <CardText className="new-partner-email">Email: {email}</CardText>
-                        <a className="learn-more-button" onClick={toggleModal}>
-                            Learn More &gt;&gt;
-                        </a>
-                        <PartnerModal 
-                            isOpen={modalOpen}
-                            toggle={toggleModal}
-                            partnerName={partnerName}
-                            partnerFlag={partnerFlag}
-                            partnerCountry={countryName} // Placeholder, replace with actual country name
-                            contactPerson={contactPerson}
-                            phone={phone}
-                            email={email}
-                            partnerDescription={description}
-                        
-                        />
-                    </div>
+
                 </CardBody>
             </Card>
         </div>

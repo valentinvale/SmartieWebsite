@@ -1,6 +1,6 @@
 .new-partner-card {
     width: 400px;
-
+    height: 110px;
     margin: 20px;
     display: flex;
     flex-direction: row;
@@ -47,6 +47,8 @@
     flex-direction: row;
     flex: 1; /* fills remaining space */
     overflow: hidden; /* hide overflow content */
+
+
 }
 
 .new-partner-name-and-flag-container{
@@ -67,6 +69,7 @@
 .new-partner-name{
     font-size: 1.2rem;
     margin-bottom: 0;
+    color: white !important;
 }
 
 .new-partner-flag {
@@ -95,23 +98,54 @@
     padding-bottom: 16.8px;
 }
 
-.new-partner-phone-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start !important;
-    justify-content: space-between;
-    font-size: 0.8rem;
-    color: var(--secondary-text-color);
+.new-partner-contact-grid {
+  display: grid;
+  grid-template-rows: auto auto; /* 2 rows */
+  grid-template-columns: max-content 1fr auto; /* label, value, Learn More */
+  column-gap: 10px;
+  row-gap: 4px;
+  align-items: center;
+  font-size: 0.8rem;
+  color: var(--secondary-text-color);
 }
 
-.new-partner-email-container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start !important;
-    justify-content: space-between;
-    font-size: 0.8rem;
-    color: var(--secondary-text-color);
+.contact-label {
+  font-weight: bold;
 }
+
+.contact-value {
+  display: flex;
+  align-items: baseline !important; /* align text to baseline */
+  gap: 4px; /* space between phone and learn more */
+}
+
+.contact-label:nth-child(1) {
+  grid-row: 1;
+  grid-column: 1;
+}
+.contact-value:nth-child(2) {
+  grid-row: 1;
+  grid-column: 2 / span 2;
+}
+
+.contact-label:nth-child(3) {
+  grid-row: 2;
+  grid-column: 1;
+}
+.contact-value-email {
+ white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 120px; /* or whatever works visually */
+  text-align: left; /* ✅ force horizontal alignment */
+  display: block; /* ✅ in case something like flex messed it up */
+}
+
+.learn-more-button-wrapper {
+  grid-row: 2;
+  grid-column: 3;
+}
+
 
 .learn-more-button {
     color: white;

@@ -43,8 +43,10 @@ function PartnerModal(props) {
 
                 
             </div>
-            <div className='modal-partner-description'>
-                <p>{partnerDescription}</p>
+            <div className="modal-partner-description">
+              {partnerDescription.split('\n').map((line, idx) =>
+                line.trim() === '' ? <br key={idx} /> : <p key={idx}>{line}</p>
+              )}
             </div>
         </ModalBody>
         <ModalFooter>
